@@ -1,0 +1,108 @@
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0.2, 0, 0.3);
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+
+    
+    
+
+  }
+
+  .chat-history {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    overflow-y: auto;
+    height: 600px; /* Adjust this value as needed */
+    
+   
+  }
+
+  .chat-message {
+    margin-bottom: 10px;
+  }
+  
+  .chat-message.user {
+    text-align: right;
+    color: rgb(8, 8, 83);
+    background-color: #2c7693;
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: 40px;
+    padding: 0.5em;
+    
+  }
+  
+  .chat-message.bot {
+    width: auto;
+    text-align: left;
+    color: rgb(3, 4, 32);
+    background-color: #b5a1a1;
+    
+    width: auto;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    height: auto;
+    padding: 0.4em;
+  }
+  
+  .chat-message.error {
+    text-align: left;
+    color: red;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .chat-input form {
+    display: flex;
+    flex: 1;
+  }
+  
+  .chat-input input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  
+  .chat-input button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .chat-input button:hover {
+    background-color: #0056b3;
+  }
+  
+/* Customize scrollbar */
+.chat-history::-webkit-scrollbar {
+    width: 3px; /* Width of vertical scrollbar */
+    background-color: #f9f9f9; /* Background color behind scrollbar */
+    
+    
+}
+
+.chat-history::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Color of the scrollbar */
+    border-radius: 10px; /* Rounded corners of the scrollbar */
+
+}
